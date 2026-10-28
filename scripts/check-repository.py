@@ -16,12 +16,22 @@ def main():
     if not paths:
         print("No tracked files were found; stage the reviewed source first.")
         return 1
-    private = {"data", "logs", "backups", "private", "research", ".private-backups", "node_modules", ".venv", "__pycache__", ".wrangler", ".next", ".gradle", ".idea"}
+    private = {"data", "logs", "backups", "private", "research", "internal", ".private", ".private-backups", "node_modules", ".venv", "__pycache__", ".wrangler", ".next", ".gradle", ".idea"}
     extensions = {".sqlite", ".sqlite3", ".db", ".key", ".pem", ".p12", ".pfx", ".jks", ".keystore", ".log", ".apk", ".aab", ".zip", ".brisaenc"}
     findings = []
     for name in paths:
         path = pathlib.PurePosixPath(name)
         base = path.name
+        private_procedure = (
+            "runbook" in name.lower()
+            or name.startswith("deploy/vps/")
+            or name in {"android/STORE-LISTING.md", "android/DATA-SAFETY.md", "infra/realtime-relay/activate-reliability.sh"}
+            or re.search(r"^scripts/(?:package|check)-.*-release.*\.py$", name)
+            or name == "scripts/check-identity-host.py"
+        )
+        if private_procedure:
+            findings.append({"path": name, "reason": "private_operational_procedure"})
+            continue
         if any(part in private for part in path.parts) or path.suffix.lower() in extensions or (base.startswith((".env", ".dev.vars")) and not base.endswith(".example")) or base.endswith((".env", ".env.save")):
             findings.append({"path": name, "reason": "private_or_generated_path"})
             continue

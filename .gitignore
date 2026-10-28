@@ -68,3 +68,9 @@ coverage/
 /android/app/build/
 /android/local.properties
 /android/key.properties
+
+# Internal operator procedures and launch records stay private.
+internal/
+.private/
+**/*runbook*
+deploy/vps/

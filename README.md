@@ -1,4 +1,6 @@
-![Lunch Finder — A useful lunch shortlist, without the daily search.](docs/assets/banner.svg)
+<p align="center">
+  <img src="assets/lunch-finder-bot-profile.png" width="150" alt="Lunch Finder project logo" />
+</p>
 
 # Lunch Finder
 
@@ -6,12 +8,17 @@ A useful lunch shortlist, without the daily search.
 
 [![CI](https://github.com/Fernise/lunch-finder/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/lunch-finder/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-52646b)](LICENSE)
+[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
 
 A configurable weekday lunch crawler that ranks nearby restaurant offers and sends a deduplicated Telegram digest.
 
 **Technology:** Python · SQLite · HTML/PDF parsing · Telegram
 
+[Overview](#what-it-does) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Verification](docs/VERIFICATION.md)
+
 ## What it does
+
+For people who want a configurable weekday lunch shortlist delivered to Telegram.
 
 - Restaurant sources from published HTML, PDFs and structured menus.
 - Ranking by menu confidence, price, rating and walking distance.
@@ -73,6 +80,12 @@ Offline tests cover parsing, closure notices, ranking, storage/deduplication and
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+## Development approach
+
+Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
+
+See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
