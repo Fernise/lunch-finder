@@ -1,0 +1,11 @@
+title = "Public source: default rules and embedded provider credentials"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "embedded-provider-credential"
+description = "High-entropy credentials assigned in source or JSON examples"
+regex = '''(?i)(?:source_bearer_token|api[_-]?key|access[_-]?token|client[_-]?secret|bot[_-]?token)["']?\s*[:=]\s*["']([A-Za-z0-9_+=./-]{16,})["']'''
+secretGroup = 1
+entropy = 3.8

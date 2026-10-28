@@ -1,0 +1,336 @@
+{
+  "office": {
+    "name": "Vienna demo location",
+    "address": "Naschmarkt, Vienna",
+    "latitude": 48.196,
+    "longitude": 16.362
+  },
+  "timezone": "Europe/Vienna",
+  "database_path": "data/lunch_finder.sqlite3",
+  "notification_limit": 5,
+  "max_offer_price_eur": 25,
+  "telegram": {
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  },
+  "restaurants": [
+    {
+      "id": "jinco",
+      "name": "Jinco 沧浪亭",
+      "address": "Rechte Wienzeile 37, 1040 Wien",
+      "latitude": 48.1967588,
+      "longitude": 16.3602522,
+      "rating": 4.7,
+      "review_count": 597,
+      "price_level": 2,
+      "source_type": "pdf",
+      "source_url": "https://www.jinco.at/_files/ugd/dc593d_7ac4258c47464c3087080d39a556397a.pdf",
+      "menu_url": "https://www.jinco.at/menu",
+      "source_items": [
+        "Veggie Wok",
+        "Crispy Chicken",
+        "Black Pepper",
+        "Red Thai Curry",
+        "Crispy Duck",
+        "Fried Noodle"
+      ],
+      "open_weekdays": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "fein_essen",
+      "name": "Fein Essen",
+      "address": "Wiedner Hauptstraße 19, 1040 Wien",
+      "latitude": 48.1966123,
+      "longitude": 16.3675718,
+      "rating": 4.8,
+      "review_count": 8,
+      "price_level": 1,
+      "source_type": "contentful",
+      "source_url": "https://cdn.contentful.com/spaces/wzej8rxfqt12/environments/master/entries?content_type=menu&order=-sys.updatedAt&limit=1&include=2",
+      "menu_url": "https://feinessen.at/",
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_bearer_token_env": "LUNCH_MENU_BEARER_TOKEN"
+    },
+    {
+      "id": "deli_naschmarkt",
+      "name": "Deli am Naschmarkt",
+      "address": "Naschmarktstand C11, 1060 Wien",
+      "latitude": 48.19835,
+      "longitude": 16.36265,
+      "rating": 4.1,
+      "review_count": 335,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://naschmarktdeli.at/en/menu-en/",
+      "curated_offer_name": "Weekday lunch menu (meat/fish)",
+      "curated_price_eur": 11.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "tewa",
+      "name": "Tewa am Naschmarkt",
+      "address": "Naschmarkt 672, 1060 Wien",
+      "latitude": 48.198457,
+      "longitude": 16.3629366,
+      "rating": 4.2,
+      "review_count": 1223,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://tewa-naschmarkt.at/speisen/",
+      "curated_offer_name": "Lunch main from the regular menu",
+      "curated_price_eur": 14.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "dr_falafel",
+      "name": "Dr. Falafel",
+      "address": "Naschmarkt 560, 1060 Wien",
+      "latitude": 48.1976718,
+      "longitude": 16.361608,
+      "rating": 4.3,
+      "review_count": 533,
+      "price_level": 1,
+      "source_type": "curated",
+      "source_url": "https://dr-falafel.at/",
+      "curated_offer_name": "Falafel plate",
+      "curated_price_eur": 10.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "bao_bar",
+      "name": "Bao Bar 1040",
+      "address": "Operngasse 30, 1040 Wien",
+      "latitude": 48.1979492,
+      "longitude": 16.3658599,
+      "rating": 4.7,
+      "review_count": 309,
+      "price_level": 1,
+      "source_type": "curated",
+      "source_url": "https://www.baobar.at/",
+      "curated_offer_name": "Crispy Chicken Bao",
+      "curated_price_eur": 10.95,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "banh_mi_hoi_an",
+      "name": "Bánh Mì Hội An",
+      "address": "Operngasse 34, 1040 Wien",
+      "latitude": 48.1949068,
+      "longitude": 16.3672898,
+      "rating": 4.7,
+      "review_count": 539,
+      "price_level": 1,
+      "source_type": "curated",
+      "source_url": "https://banhmihoian.at/",
+      "menu_url": "https://banhmihoian.at/wp-content/uploads/2024/04/Speisekarte-7.pdf",
+      "curated_offer_name": "Bánh mì sandwich",
+      "curated_price_eur": 10.8,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "dim_sum",
+      "name": "Dim-Sum Restaurant Chinazentrum",
+      "address": "Rechte Wienzeile 29, 1040 Wien",
+      "latitude": 48.1971827,
+      "longitude": 16.3616207,
+      "rating": 4.4,
+      "review_count": 685,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://www.chinazentrum-naschmarkt.at/",
+      "menu_url": "https://www.chinazentrum-naschmarkt.at/uploads/FCHsESnW/speisekarte.pdf",
+      "curated_offer_name": "Homemade dim sum lunch",
+      "curated_price_eur": 13.9,
+      "open_weekdays": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "sichuan_ravioli",
+      "name": "Sichuan Ravioli 醉川龙抄手",
+      "address": "Rechte Wienzeile 25-27, 1040 Wien",
+      "latitude": 48.1974401,
+      "longitude": 16.3622884,
+      "rating": 4.8,
+      "review_count": 146,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://sichuanravioli.at/de",
+      "curated_offer_name": "Sichuan wontons / noodle main",
+      "curated_price_eur": 13.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "yus_cottage",
+      "name": "Yu's Cottage",
+      "address": "Kettenbrückengasse 3, 1050 Wien",
+      "latitude": 48.1943864,
+      "longitude": 16.3613763,
+      "rating": 4.9,
+      "review_count": 114,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://yuscottage.at/",
+      "curated_offer_name": "Chinese lunch main",
+      "curated_price_eur": 14.9,
+      "open_weekdays": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "kung_fu_noodles",
+      "name": "Echtes Kung Fu Rindfleischnudeln",
+      "address": "Kettenbrückengasse 23, 1050 Wien",
+      "latitude": 48.1964482,
+      "longitude": 16.3594294,
+      "rating": 5.0,
+      "review_count": 124,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=Echtes+Kung+Fu+Rindfleischnudeln+Wien",
+      "curated_offer_name": "Beef noodle soup",
+      "curated_price_eur": 14.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "chili_melody",
+      "name": "Chili Melody",
+      "address": "Margaretenstraße 22, 1040 Wien",
+      "latitude": 48.1972375,
+      "longitude": 16.3655391,
+      "rating": 4.6,
+      "review_count": 22,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://chilimelody.at/",
+      "curated_offer_name": "Sichuan lunch main",
+      "curated_price_eur": 13.9,
+      "open_weekdays": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "china_kitchen_27",
+      "name": "China Kitchen No. 27",
+      "address": "Naschmarkt 27, 1060 Wien",
+      "latitude": 48.1986281,
+      "longitude": 16.362776,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://chinakitchenno27.at/",
+      "curated_offer_name": "Noodle or rice main",
+      "curated_price_eur": 14.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "neni",
+      "name": "NENI am Naschmarkt",
+      "address": "Naschmarkt 510, 1060 Wien",
+      "latitude": 48.197899,
+      "longitude": 16.362127,
+      "rating": 4.3,
+      "review_count": 6397,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://www.nenifood.com/restaurants/naschmarkt",
+      "curated_offer_name": "Oriental lunch main",
+      "curated_price_eur": 17.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "market_restaurant",
+      "name": "Market Restaurant",
+      "address": "Linke Wienzeile 36, 1060 Wien",
+      "latitude": 48.1976408,
+      "longitude": 16.3604275,
+      "rating": 4.3,
+      "review_count": 1531,
+      "price_level": 2,
+      "source_type": "curated",
+      "source_url": "https://www.market-restaurant.at/",
+      "curated_offer_name": "Asian lunch main",
+      "curated_price_eur": 18.9,
+      "open_weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

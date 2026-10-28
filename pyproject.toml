@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tttech-lunch-finder"
+version = "0.1.0"
+description = "Daily lunch offer crawler and Telegram digest for the TTTech Kettenbrueckengasse office"
+requires-python = ">=3.11"
+dependencies = ["pypdf>=5,<7"]
+
+[project.scripts]
+lunch-finder = "lunch_finder.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lunch_finder*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

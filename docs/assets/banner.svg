@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">Lunch Finder</title><desc id="desc">A useful lunch shortlist, without the daily search.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e27"/><stop offset="1" stop-color="#ab693e"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern></defs>
+<rect width="1200" height="280" rx="16" fill="url(#bg)"/><rect width="1200" height="280" rx="16" fill="url(#grid)"/>
+<circle cx="1090" cy="95" r="120" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="28"/><circle cx="1090" cy="95" r="70" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+<text x="56" y="70" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#ffffff" opacity=".72">FERNISE / PROJECT COLLECTION</text>
+<text x="56" y="150" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#ffffff">Lunch Finder</text>
+<text x="56" y="198" font-family="Arial,sans-serif" font-size="22" fill="#ffffff" opacity=".9">A useful lunch shortlist, without the daily search.</text>
+</svg>

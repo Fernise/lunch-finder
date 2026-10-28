@@ -1,0 +1,17 @@
+[Unit]
+Description=TTTech lunch offer crawler and Telegram digest
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=lunchfinder
+Group=lunchfinder
+WorkingDirectory=/opt/lunch_finder
+EnvironmentFile=/opt/lunch_finder/.env
+ExecStart=/opt/lunch_finder/.venv/bin/python -B -m lunch_finder.cli --config config.json
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/lunch_finder/data

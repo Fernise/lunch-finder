@@ -1,0 +1,10 @@
+[Unit]
+Description=Send the TTTech weekday lunch digest
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 10:15:00 Europe/Vienna
+Persistent=true
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

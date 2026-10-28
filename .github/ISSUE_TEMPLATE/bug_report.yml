@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem using fictional data.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, personal records or private logs. Report vulnerabilities privately through the Security tab."
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps and affected commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Runtime and platform
