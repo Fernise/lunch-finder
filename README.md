@@ -47,6 +47,14 @@ python -m lunch_finder.cli --config config.json --dry-run
 
 A dry run still fetches external menu sources and writes local crawl state; it only suppresses Telegram delivery and notification marks. Use the unit tests for a fully offline check.
 
+To deliver new selections to Telegram, set `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in your ignored `.env` file, then run:
+
+```sh
+python -m lunch_finder.cli --config config.json
+```
+
+This fetches menus and sends the new shortlist to the configured chat. Previously notified offers are skipped.
+
 The authenticated menu example references `LUNCH_MENU_BEARER_TOKEN` by environment-variable name. No provider token is bundled. Missing credentials skip that source with a configuration error before any authenticated request. See [configuration](docs/CONFIGURATION.md).
 
 ## Verification
